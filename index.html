@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
 
+
     <title>Читай город</title>
 </head>
 
@@ -27,7 +28,7 @@
             </div>
 
             <div class="questions second-question">
-                <p><span class="num_of_question">2.</span>Вам понравилось обслуживание?</p>
+                <p class="question"><span class="num_of_question">2.</span>Вам понравилось обслуживание?</p>
 
                 <div class="answers">
                     <p class="answer">Да</p>
@@ -38,10 +39,34 @@
             </div>
 
             <div class="questions third-question">
-                <p><span class="num_of_question">3.</span>С какой вероятностью Вы порекомендуете Читай-город друзьям и
+                <p class="question"><span class="num_of_question">3.</span>С какой вероятностью Вы порекомендуете
+                    Читай-город друзьям и
                     родственникам?</p>
 
+                <div class="range-slider">
+                    <span id="range-value" class="range-value">0</span>
+                    <input id="rs-range-line" class="rs-range" type="range" value="5" min="0" max="10" step="1">
+                </div>
             </div>
+
+
+
+
+
+
+            <div class="questions fourth-question">
+                <p class="question">Что не понравилось?</p>
+                <div class="answers">
+                    <p class="answer">Ассортимент</p>
+                    <p class="answer">Атмосфера</p>
+                    <p class="answer">Работа кассира</p>
+                    <p class="answer">Работа сотрудника зала</p>
+                    <p class="answer">Цены</p>
+                    <p class="answer">Все понравилось</p>
+                </div>
+            </div>
+
+            <input type="submit" value="Отправить">
 
         </form>
     </div>
