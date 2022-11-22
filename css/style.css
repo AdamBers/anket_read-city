@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'PT Sans';
-    background-color: #191919;
+    background-color: #e5e5e5;
 }
 
 
@@ -61,3 +61,10 @@ body {
     line-height: 18px;
     color: #2283C7;
 }
+
+.answer:hover {
+    cursor: pointer;
+    background: #2283C7;
+    color: white;
+}
+
