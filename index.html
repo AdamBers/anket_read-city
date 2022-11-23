@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-
-
+    <script src="./js/script.js"></script>
     <title>Читай город</title>
 </head>
 
@@ -19,7 +18,12 @@
         </div>
         <form action="./end.html" id="main-form">
             <div class="questions first-question">
-                <p class="question"><span class="num_of_question">1.</span>Вы первый раз в магазине?</p>
+                <p class="question">
+                    <span class="num_of_question">
+                        1.
+                    </span>
+                    Вы первый раз в магазине?
+                </p>
 
                 <div class="answers">
                     <p class="answer">Первый раз</p>
@@ -29,13 +33,20 @@
 
             <div class="questions second-question">
                 <p class="question"><span class="num_of_question">2.</span>Вам понравилось обслуживание?</p>
-
                 <div class="answers">
-                    <p class="answer">Да</p>
-                    <p class="answer">Нейтрально</p>
-                    <p class="answer">Нет</p>
+                    <div class="yes answer">
+                        <p class="">Да</p>
+                        <img class="img-reaction" src="./img/yes.svg" alt="logo">
+                    </div>
+                    <div class="yesNo answer">
+                        <p class="">Нейтрально</p>
+                        <img class="img-reaction" src="./img/yesNo.svg" alt="logo">
+                    </div>
+                    <div class="no answer">
+                        <p class="">Нет</p>
+                        <img class="img-reaction" src="./img/no.svg" alt="logo">
+                    </div>
                 </div>
-
             </div>
 
             <div class="questions third-question">
@@ -48,11 +59,6 @@
                     <input id="rs-range-line" class="rs-range" type="range" value="5" min="0" max="10" step="1">
                 </div>
             </div>
-
-
-
-
-
 
             <div class="questions fourth-question">
                 <p class="question">Что не понравилось?</p>
