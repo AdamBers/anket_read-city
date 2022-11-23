@@ -3,6 +3,8 @@ window.onclick = event => {
     if (backgroundColor === '' && event.target.classList.contains("answer")) {
         event.target.style.backgroundColor = '#2283C7';
         event.target.style.color = '#fff';
+        event.target.style.borderColor = '#fff';
+
     } else {
         event.target.style.backgroundColor = '';
         event.target.style.color = '#2283C7';
