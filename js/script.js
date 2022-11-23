@@ -1,38 +1,13 @@
-// var rangeSlider = document.getElementById("rs-range-line");
-// var rangeBullet = document.getElementById("rs-bullet");
-
-// rangeSlider.addEventListener("input", showSliderValue, false);
-
-// function showSliderValue() {
-//   rangeBullet.innerHTML = rangeSlider.value;
-//   var bulletPosition = (rangeSlider.value /rangeSlider.max);
-//   rangeBullet.style.left = (bulletPosition * 578) + "px";
-// }
-
-
-// window.onclick = e => {
-//     if (e.target.style.backgroundColor === "#fff") {
-//         e.target.style.backgroundColor = "#2283C7";
-//         e.target.style.color = "#fff";
-//         return
-//     }else {
-//         e.target.style.backgroundColor = "#fff";
-//         e.target.style.color = "#2283C7";
-//     }
-// }
-
-
-
-
-// var rangeInput = document.getElementById("rs-range-line");
-
-// rangeInput.addEventListener('mouseup', function () {
-//     if (this.value > 0 && this.value < 5) {
-//         alert("First");
-//     } else {
-//         alert("Second");
-//     }
-// });
+window.onclick = event => {
+    const backgroundColor = event.target.style.backgroundColor;
+    if (backgroundColor === '' && event.target.classList.contains("answer")) {
+        event.target.style.backgroundColor = '#2283C7';
+        event.target.style.color = '#fff';
+    } else {
+        event.target.style.backgroundColor = '';
+        event.target.style.color = '#2283C7';
+    }
+}
 
 
 function checkRange(event) {

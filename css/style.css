@@ -75,13 +75,14 @@ body {
     line-height: 18px;
     color: #2283C7;
     margin-bottom: 12px;
+    background-color: #fff;
 }
 
 
 .answer:hover {
     cursor: pointer;
-    background: #2283C7;
-    color: #fff;
+    /* background: #2283C7;
+    color: #fff; */
 }
 
 /*  */
@@ -108,4 +109,15 @@ input {
     width: 10px;
     height: 14px;
     border-left: 1px solid #000;
+}
+
+
+.fourth-question {
+    display: none;
+}
+
+
+.first-answer {
+
+    justify-content: center;
 }
