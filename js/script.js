@@ -6,6 +6,8 @@ window.onclick = event => {
     } else {
         event.target.style.backgroundColor = '';
         event.target.style.color = '#2283C7';
+        event.target.style.borderColor = '#fff';
+
     }
 }
 

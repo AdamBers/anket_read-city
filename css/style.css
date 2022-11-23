@@ -121,3 +121,27 @@ input {
 
     justify-content: center;
 }
+
+.answers-4_1 {
+    border: 2px solid #2283C7;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 700;
+    color: #2283C7;
+    margin-bottom: 12px;
+    background-color: #2283C7;
+}
+
+
+.answers-4_opened {
+    margin: 14px;
+}
+
+
+.answers-4_opened .answer {
+    width: max-content;
+}
+
+.p_answers-4 {
+color: #fff;
+}
