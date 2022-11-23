@@ -11,12 +11,15 @@
 
 
 // window.onclick = e => {
-//     if (e.target.style.backgroundColor === "#fff" ) {
+//     if (e.target.style.backgroundColor === "#fff") {
 //         e.target.style.backgroundColor = "#2283C7";
 //         e.target.style.color = "#fff";
-//         console.log(e.target.className)
+//         return
+//     }else {
+//         e.target.style.backgroundColor = "#fff";
+//         e.target.style.color = "#2283C7";
 //     }
-// } 
+// }
 
 
 
