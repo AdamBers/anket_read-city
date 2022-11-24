@@ -159,6 +159,7 @@ body {
     border: 2px solid #2283C7;
     border-radius: 6px;
     margin-bottom: 12px;
+    cursor: pointer;
 }
 
 .answer-name {
@@ -219,8 +220,33 @@ body {
 
 
 
-
+/* 
 .container-answers-4:first-child {
     background-color: red;
     z-index: 100;
+} */
+
+
+.container-answers-4-closed {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #2283C7;
+    border-radius: 6px;
+    height: 46px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #2283C7;
+    margin-bottom: 12px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+
+.container-answers-4-closed div:not(:first-child) {
+    display: none;
 }

@@ -29,10 +29,18 @@ window.onclick = event => {
     }
 
     ////////////////////////Show hide elements
-    // if (event.target.className = 'answer-name') {
-    //     event.target.className = 'answer'
-    // }
 
+
+
+    if (event.target.parentElement.className === 'container-answers-4') {
+        event.target.parentElement.className = 'container-answers-4-closed'
+        console.log(event.target.parentElement.className)
+        // event.target.firstChild.style.backgroundColor = "red"
+    } else if (event.target.parentElement.className === 'container-answers-4-closed') {
+        event.target.parentElement.className = 'container-answers-4'
+        // event.target.firstChild.style.backgroundColor = "red"
+        console.log(event.target.parentElement.className)
+    }
 
 
 }
@@ -46,3 +54,4 @@ function checkRange(event) {
         document.getElementById("fourth-question").style.display = "block";
     }
 }
+
