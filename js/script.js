@@ -1,7 +1,8 @@
 window.onclick = event => {
+
+
+    /////////////////////BG color change
     const backgroundColor = event.target.style.backgroundColor;
-
-
     if (backgroundColor === '' && event.target.classList.contains("answer")) {
         event.target.style.backgroundColor = '#2283C7';
         event.target.style.color = '#fff';
@@ -26,6 +27,12 @@ window.onclick = event => {
         event.target.style.color = '#2283C7';
 
     }
+
+    ////////////////////////Show hide elements
+    // if (event.target.className = 'answer-name') {
+    //     event.target.className = 'answer'
+    // }
+
 
 
 }
