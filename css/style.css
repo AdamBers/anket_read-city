@@ -250,3 +250,19 @@ body {
 .container-answers-4-closed div:not(:first-child) {
     display: none;
 }
+
+
+.container-answers-4-closed .answer-name {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #2283C7;
+    margin-bottom: 12px;
+    border-bottom: none;
+}
