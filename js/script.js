@@ -31,7 +31,6 @@ window.onclick = event => {
     ////////////////////////Show hide elements
 
 
-
     if (event.target.parentElement.className === 'container-answers-4') {
         event.target.parentElement.className = 'container-answers-4-closed'
         console.log(event.target.parentElement.className)
