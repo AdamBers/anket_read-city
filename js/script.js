@@ -73,7 +73,8 @@ function showHideChild(event) {
 
 
 function showHideElement(event) {
-    console.log(event.target.value)
+    console.log(event.target)
     var subGroup = document.getElementById("sub_group_price")
     subGroup.classList.toggle("hidden")
+
 }
