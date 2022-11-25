@@ -67,8 +67,6 @@
 
                 <div class="answers-4">
 
-
-
                     <div class="container-answers-4-closed">
 
                         <p class="answer-name">Ассортимент магазина</p>
@@ -130,130 +128,44 @@
                     <div class="container-answers-4-closed">
                         <p class="answer-name">Цены</p>
                         <div class="l-2">
-                            <div>
+                            <p class="sub_p">Что Вам не понравилось в ценах?</p>
+                            <div class="sub_answer" onclick="showHideElement(event)">
+                                <p> Высокие цены</p>
 
-                                <div class="books">
-                                    <span class="sub_p">На что именно высокие цены?</span>
-                                    <p onclick="showHideChild(event)">Книги</p>
-                                    <div class="hidden">
-                                        <div>
-                                            <p>Художественная литература</p>
-                                        </div>
-                                        <div>
-                                            <p>Детская литература</p>
-                                        </div>
-                                        <div>
-                                            <p>Учебная и прикладная литература</p>
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <p>Канцтовары</p>
-                                </div>
-
-                                <div>
-                                    <p> Хобби/Игры/Игрушки</p>
-                                </div>
-                                <div>
-                                    <p> Сувениры</p>
-                                </div>
-                                <div>
-                                    <p> Еда и напитки</p>
-                                </div>
-
-                                <div>
-                                    <p> Другое</p>
-                                </div>
-
-
-
-
-
-
-
-
-
-
-                                <!-- <p class="question">Что Вам не понравилось в ценах?</p>
-                            <div>
-
-
+                                
                             </div>
+                            <div class="sub_answer"> Неактуальные акции</div>
+                            <div class="sub_answer"> Цена на кассе не соответствует ценнику</div>
 
-
-                            <div>
-                                <p onclick="showHideChild(event)">Высокие цены</p>
+                            <div class="sub_group_price hidden" id="sub_group_price">
+                                <span class="sub_p">На что именно высокие цены?</span>
                                 <div>
-                                    <p class="question">На что именно высокие цены?</p>
-                                    <div>
-                                        <div>
-                                            <div>
-                                                <p onclick="showHideChild(event)">Книги</p>
-                                            </div>
-
-                                        </div>
-                                        <div class="l-6">Канцтовары</div>
-                                        <div class="l-6">Хобби/Игры/Игрушки</div>
-                                        <div class="l-6">Сувениры</div>
-                                        <div class="l-6">Еда и напитки</div>
-                                        <div class="l-6">Другое</div>
-                                    </div>
+                                    <p onclick="showHideChild()">Книги</p>
                                 </div>
-                            </div>
-                            <p> Неактуальные акции</p>
-                            <p> Цена на кассе не соответствует ценнику</p>
 
+                                <p>Канцтовары</p>
+                                <p>Хобби/Игры/Игрушки</p>
+                                <p>Сувениры</p>
+                                <p>Еда и напитки</p>
+                                <p>Другое</p>
 
-                            <div class="l-4">
-
-                                <div class="l-5">
-                                    <div class="l-6">
-
-                                        <div class="l-7">
-                                            <p class="question">На какие именно книги высокие цены</p>
-                                            <div class="l-8">
-                                                <p> Художественная литература</p>
-                                                <p>Детская литература</p>
-                                                <p>Учебная и прикладная литература</p>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
+                                <div class="hidden">
+                                    <p>На какие именно книги высокие цены?</p>
+                                    <p>Художественная литература</p>
+                                    <p>Детская литература</p>
+                                    <p>Учебная и прикладная литература</p>
                                 </div>
+                                <input type="text" placeholder="Комментарий">
                             </div>
-
-
-
-
-
-
-
-
-
-
-
-                            <div class="l-3">
-
-                            </div>
-                            <div class="l-3">
-                            </div> -->
-                            </div>
-
                         </div>
-
-
-
 
                     </div>
 
 
 
+
                 </div>
+            </div>
 
 
 
@@ -261,10 +173,13 @@
 
 
 
-                <input type="submit" value="Отправить" id="send">
+
+
+
         </form>
-
+        <input type="submit" value="Отправить" id="send">
     </div>
+
 </body>
 
 </html>
