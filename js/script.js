@@ -54,3 +54,17 @@ function checkRange(event) {
     }
 }
 
+
+function showHideChild(event) {
+    // event.target.nextSibling.style.display = "none"
+    // event.target.nextElementSibling.style.display = "none"
+    if (event.srcElement.nextElementSibling.style.display === "none") {
+        event.srcElement.nextElementSibling.style.display = "block"
+        event.target.parentElement.style.backgroundColor = "#fff"
+    } else {
+        event.srcElement.nextElementSibling.style.display = "none"
+    }
+
+
+
+}
