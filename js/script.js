@@ -77,4 +77,10 @@ function showHideElement(event) {
     var subGroup = document.getElementById("sub_group_price")
     subGroup.classList.toggle("hidden")
 
+    
+    if (event.target.id === "hiPrices") {
+        var sub_answer_price = document.getElementById("sub_answer_price")
+        sub_answer_price.style.className = "sub_answer_price_opened"
+    }
+
 }
