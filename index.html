@@ -12,160 +12,65 @@
 
 <body>
     <div class="main-container">
-        <div class="header">
-            <img class="logo" src="./img/logo.svg" alt="logo">
-            <img class="close-icon" src="./img/closeX.svg" alt="logo">
-        </div>
         <form action="./end.html" id="main-form">
-            <div class="questions first-question">
-                <p class="question">
-                    <span class="num_of_question">
-                        1.
-                    </span>
-                    Вы первый раз в магазине?
-                </p>
-
-                <div class="answers">
-                    <p class="answer first-answer" id="firstone">Первый раз</p>
-                    <p class="answer first-answer">Нет</p>
-                </div>
+            <div class="header">
+                <img class="logo" src="./img/logo.svg" alt="logo">
+                <img class="close-icon" src="./img/closeX.svg" alt="logo">
             </div>
+            <div class="questions">
+                <div class="first-question">
+                    <p class="question-name"><span class="question-number">1. </span>Вы первый раз в магазине?</p>
 
-            <div class="questions second-question">
-                <p class="question"><span class="num_of_question">2.</span>Вам понравилось обслуживание?</p>
-                <div class="answers">
-                    <div class="yes answer">
-                        <p class="">Да</p>
-                        <img class="img-reaction" src="./img/yes.svg" alt="logo">
-                    </div>
-                    <div class="yesNo answer">
-                        <p class="">Нейтрально</p>
-                        <img class="img-reaction" src="./img/yesNo.svg" alt="logo">
-                    </div>
-                    <div class="no answer">
-                        <p class="">Нет</p>
-                        <img class="img-reaction" src="./img/no.svg" alt="logo">
-                    </div>
+                    <input id="first-time" type="radio" value="first-time" name="first-question" required>
+                    <label for="first-time">Первый раз</label>
+                    <input id="not-first-time" type="radio" value="not-first-time" name="first-question" required>
+                    <label for="not-first-time">Нет</label>
                 </div>
-            </div>
 
-            <div class="questions third-question">
-                <p class="question"><span class="num_of_question">3.</span>С какой вероятностью Вы порекомендуете
-                    Читай-город друзьям и
-                    родственникам?</p>
+                <div class="second-question">
+                    <p class="question-name"><span class="question-number">2. </span>Вам понравилось обслуживание?</p>
 
-                <div class="range-slider">
-                    <span id="range-value" class="range-value"></span>
+                    <input id="q-2-yes" type="radio" value="yes" name="second-question" required>
+                    <label for="q-2-yes">
+                        Да
+                        <img class="yes" src="./img/yes.svg" alt="yes_smile_image">
+                    </label>
+
+
+                    <input id="q-2-yesno" type="radio" value="yes-no" name="second-question" required>
+                    <label for="q-2-yesno">
+                        Нейтрально
+                        <img class="yes-no" src="./img/yesNo.svg" alt="neutral_image">
+                    </label>
+
+
+                    <input id="q-2-no" type="radio" value="no" name="second-question" required>
+                    <label for="q-2-no">
+                        Нет
+                        <img class="no" src="./img/no.svg" alt="no_image">
+                    </label>
+
+                </div>
+
+
+
+                <div class="third-question">
+                    <p class="question-name"><span class="question-number">4. </span>С какой вероятностью Вы
+                        порекомендуете Читай-город друзьям и родственникам?</p>
                     <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="10" step="1"
                         onchange="checkRange(event)">
                 </div>
-            </div>
-
-            <div class="questions fourth-question" id="fourth-question">
-                <p class="question" id="question-4-id">Что не понравилось?</p>
 
 
-                <div class="answers-4">
+                <div class="fourth-question hidden" id="fourth-question">
+                    <p class="question-name">Что не понравилось?</p>
 
-                    <div class="container-answers-4-closed">
+                    <!-- <input id="first-time" type="radio" value="first-time" name="first-question" required>
+                    <label for="first-time">Первый раз</label>
 
-                        <p class="answer-name">Ассортимент магазина</p>
-                        <div>
-                            <div class="sub_answers">
-                                <p class="sub_p">Скажите пожалуйста, что именно Вам не понравилось?</p>
-                                <div class="sub_answer">Нет нужного товара </div>
-                                <div class="sub_answer">Трудности с поиском товара</div>
-                                <div class="sub_answer">Недостаточный выбор товара</div>
-                                <div class="sub_answer">Не устраивает качество товара</div>
-                            </div>
-                            <input type="text" placeholder="Ваш комментарий" class="input-text">
-                        </div>
-                    </div>
-
-
-                    <div class="container-answers-4-closed">
-                        <p class="answer-name">Атмосфера</p>
-
-                        <div class="sub_answers">
-                            <p class="sub_p">На что нам следует обратить внимание в атмосфере магазина?</p>
-                            <p class="sub_answer">Темный зал</p>
-                            <p class="sub_answer">В помещении жарко/душно</p>
-                            <p class="sub_answer">В помещении холодно</p>
-                            <p class="sub_answer">Грязно</p>
-                        </div>
-                    </div>
-
-
-                    <div class="container-answers-4-closed">
-                        <p class="answer-name">Работа кассира</p>
-
-                        <div class="sub_answers">
-                            <p class="sub_p">На что нам следует обратить внимание в работе кассира?</p>
-                            <p class="sub_answer">Медленная работа сотрудника</p>
-                            <p class="sub_answer">Большая очередь/время ожидания</p>
-                            <p class="sub_answer">Сотрудник неприветлив</p>
-                            <p class="sub_answer">Навязчивое обслуживание</p>
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="container-answers-4-closed">
-                        <p class="answer-name">Работа сотрудника зала</p>
-
-                        <div class="sub_answers">
-                            <p class="sub_p">На что нам следует обратить внимание в работе сотрудников зала?</p>
-                            <p class="sub_answer">Сложно найти сотрудника</p>
-                            <p class="sub_answer">Не оказана помощь в выборе товара</p>
-                            <p class="sub_answer">Сотрудник неприветлив</p>
-                            <p class="sub_answer">Навязчивое обслуживание</p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="container-answers-4-closed">
-                        <p class="answer-name">Цены</p>
-                        <div class="l-2">
-                            <p class="sub_p">Что Вам не понравилось в ценах?</p>
-                            <div class="sub_answer" id="sub_answer_price">
-                                <p onclick="showHideElement(event)" id="hiPrices"> Высокие цены</p>
-                                <div class="sub_group_price hidden" id="sub_group_price">
-                                    <span class="sub_p">На что именно высокие цены?</span>
-                                    <div>
-                                        <p onclick="showHideChild()">Книги</p>
-                                    </div>
-
-                                    <p>Канцтовары</p>
-                                    <p>Хобби/Игры/Игрушки</p>
-                                    <p>Сувениры</p>
-                                    <p>Еда и напитки</p>
-                                    <p>Другое</p>
-
-                                    <div class="hidden">
-                                        <p>На какие именно книги высокие цены?</p>
-                                        <p>Художественная литература</p>
-                                        <p>Детская литература</p>
-                                        <p>Учебная и прикладная литература</p>
-                                    </div>
-                                    <input type="text" placeholder="Комментарий">
-                                </div>
-
-                            </div>
-                            <div class="sub_answer"> Неактуальные акции</div>
-                            <div class="sub_answer"> Цена на кассе не соответствует ценнику</div>
-
-
-                        </div>
-
-                    </div>
-
-
-
-
+                    <input id="not-first-time" type="radio" value="not-first-time" name="first-question" required>
+                    <label for="not-first-time">Нет</label> -->
                 </div>
-            </div>
 
 
 
@@ -176,8 +81,12 @@
 
 
 
+
+
+
+                <input type="submit" value="Отправить" id="send-button">
         </form>
-        <input type="submit" value="Отправить" id="send">
+
     </div>
 
 </body>
