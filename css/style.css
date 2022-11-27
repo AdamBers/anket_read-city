@@ -70,11 +70,13 @@ input[type=radio] {
     display: none;
 }
 
+
+
 label {
     user-select: none;
 }
 
-.first-question, .second-question, .third-question {
+.first-question, .second-question, .third-question, .fourth-question {
     margin-bottom: 32px;
     padding-bottom: 32px;
     border-bottom: 1.5px solid #E5E5E5;
@@ -143,11 +145,30 @@ label img {
 }
 
 
+input[type="checkbox"] {
+    width: 0;
+    height: 0;
+}
 
 
-
-
-
+.fourth-question>label {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 2px solid #2283C7;
+    border-radius: 6px;
+    height: 46px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #2283C7;
+    margin-bottom: 12px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 18px;
+}
 
 
 
@@ -197,4 +218,14 @@ label img {
 
 .hidden {
     display: none;
+}
+
+
+.fourth-question input {
+    display: block;
+}
+
+input[type="checkbox"]:checked+label {
+    background-color: #2283C7;
+    color: #fff;
 }
