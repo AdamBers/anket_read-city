@@ -475,7 +475,9 @@ input[type="checkbox"] {
 .sotrudnik-zal,
 .assortiment,
 .quality,
-.assortiment-no-choice {
+.assortiment-no-choice,
+.trudno-poisk,
+.net-tovara {
     display: none;
 }
 
@@ -484,14 +486,19 @@ input[type="checkbox"] {
 #sotr-zala:checked~.sotrudnik-zal,
 #assortiment:checked~.assortiment,
 #assortiment-bad-quality:checked~.quality,
-#assortiment-no-choice:checked~.assortiment-no-choice {
+#assortiment-no-choice:checked~.assortiment-no-choice,
+#assortiment-hard-find:checked~.trudno-poisk,
+#assortiment-net-tovara:checked~.net-tovara {
     display: block;
 }
 
 
 
 #assortiment:checked+label,
-#assortiment-no-choice:checked+label {
+#assortiment-no-choice:checked+label,
+#assortiment-hard-find:checked+label,
+#assortiment-net-tovara:checked+label {
+    width: 100%;
     border-radius: 6px 6px 0 0;
     margin-bottom: 0;
 }
@@ -510,7 +517,9 @@ input[type="checkbox"] {
 }
 
 .quality,
-.assortiment-no-choice {
+.assortiment-no-choice,
+.trudno-poisk,
+.net-tovara {
     padding: 14px 12px;
     background-color: #fff;
     color: #2283C7;
@@ -540,7 +549,9 @@ input[type="checkbox"] {
 }
 
 
-.assortiment-no-choice label {
+.assortiment-no-choice label,
+.trudno-poisk label,
+.net-tovara label {
     display: block;
     width: max-content;
     border-radius: 6px;
@@ -552,7 +563,9 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-#no-choice-books:checked+label, #no-choice-kanc:checked+label, #no-choice-hobby:checked+label, #no-choice-suvenir:checked+label, #no-choice-food:checked+label, #no-choice-another:checked+label {
+#no-choice-books:checked+label, #no-choice-kanc:checked+label, #no-choice-hobby:checked+label, #no-choice-suvenir:checked+label, #no-choice-food:checked+label, #no-choice-another:checked+label,
+#trudno-poisk-books:checked+label, #trudno-poisk-kanc:checked+label, #trudno-poisk-hobby:checked+label, #trudno-poisk-suvenir:checked+label, #trudno-poisk-food:checked+label, #trudno-poisk-another:checked+label,
+#net-tovara-books:checked+label, #net-tovara-kanc:checked+label, #net-tovara-hobby:checked+label, net-tovara-suvenir:checked+label, #net-tovara-food:checked+label, #net-tovara-another:checked+label {
     color: #fff;
     background-color: #2283C7;
 }
