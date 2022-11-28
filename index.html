@@ -20,7 +20,6 @@
             <div class="questions">
                 <div class="first-question">
                     <p class="question-name"><span class="question-number">1. </span>Вы первый раз в магазине?</p>
-
                     <input id="first-time" type="radio" value="first-time" name="first-question" required>
                     <label for="first-time">Первый раз</label>
                     <input id="not-first-time" type="radio" value="not-first-time" name="first-question" required>
@@ -58,7 +57,22 @@
                     <p class="question-name"><span class="question-number">3. </span>С какой вероятностью Вы
                         порекомендуете Читай-город друзьям и родственникам?</p>
                     <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="10" step="1"
-                        onchange="checkRange(event)">
+                        onchange="checkRange(event)" list="tickmarks">
+
+
+                    <datalist id="tickmarks">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
                 </div>
 
 
@@ -88,50 +102,49 @@
 
                             <input id="net-tovara-books" type="checkbox" value="net-tovara-books" name="net-tovara">
                             <label for="net-tovara-books" id="net-tovara-books-label">Книги</label>
-                            <input type="text" name="book1" id="book1" class="adding-text"
-                                placeholder="Введите название...">
+                            <div id="book1">
+                                <p class="sub-answer">Какую именно книгу вы не смогли найти?</p>
+                                <input type="text" name="book1" class="adding-text" placeholder="Введите название...">
+                            </div>
+
 
                             <input id="net-tovara-kanc" type="checkbox" value="net-tovara-kanc" name="net-tovara">
                             <label for="net-tovara-kanc" id="net-tovara-kanc-label">Канцтовары</label>
-                            <input type="text" name="kanc2" id="kanc2" class="adding-text"
-                                placeholder="Введите название...">
+                            <div id="kanc2">
+                                <p class="sub-answer">Что именно из канцтоваров вы не смогли найти?</p>
+                                <input type="text" name="kanc2" class="adding-text" placeholder="Введите название...">
+                            </div>
+
 
                             <input id="net-tovara-hobby" type="checkbox" value="net-tovara-hobby" name="net-tovara">
                             <label for="net-tovara-hobby" id="net-tovara-hobby-label">Хобби/Игры/Игрушки</label>
-                            <input type="text" name="hobby3" id="hobby3" class="adding-text"
-                                placeholder="Введите название...">
+                            <div id="hobby3">
+                                <p class="sub-answer">Что именно из категории Хобби/Игры/Игрушки вы не смогли найти?</p>
+                                <input type="text" name="hobby3" class="adding-text" placeholder="Введите название...">
+                            </div>
 
                             <input id="net-tovara-suvenir" type="checkbox" value="net-tovara-suvenir" name="net-tovara">
                             <label for="net-tovara-suvenir" id="net-tovara-suvenir-label">Сувениры</label>
-                            <input type="text" name="suvenir4" id="suvenir4" class="adding-text"
-                                placeholder="Введите название...">
+                            <div id="suvenir4">
+                                <p class="sub-answer">Что именно из сувениров вы не смогли найти?</p>
+                                <input type="text" name="suvenir4" class="adding-text"
+                                    placeholder="Введите название...">
+                            </div>
 
                             <input id="net-tovara-food" type="checkbox" value="net-tovara-food" name="net-tovara">
                             <label for="net-tovara-food" id="net-tovara-food-label">Еда и напитки</label>
-                            <input type="text" name="food5" id="food5" class="adding-text"
-                                placeholder="Введите название...">
+                            <div id="food5">
+                                <p class="sub-answer">Что именно из еды и напитков вы не смогли найти?</p>
+                                <input type="text" name="food5" class="adding-text" placeholder="Введите название...">
+                            </div>
 
                             <input id="net-tovara-another" type="checkbox" value="net-tovara-another" name="net-tovara">
                             <label for="net-tovara-another" id="net-tovara-another-label">Другое</label>
+
                             <input type="text" name="another-6" id="another6" class="adding-text"
                                 placeholder="Введите название...">
+
                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                         <input id="assortiment-hard-find" type="checkbox" value="assortiment-hard-find"
@@ -167,20 +180,6 @@
                                 name="assortiment-trudno-poisk">
                             <label for="trudno-poisk-another" id="trudno-poisk-another-label">Другое</label>
                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -220,16 +219,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
                         <input id="assortiment-bad-quality" type="checkbox" value="assortiment-bad-quality"
                             name="assortiment">
                         <label for="assortiment-bad-quality" id="assortiment-bad-quality-label">Не устраивает качество
@@ -240,24 +229,7 @@
                             <input type="text" placeholder="Введите название" id="quality-of">
                         </div>
 
-
-
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -282,9 +254,6 @@
 
 
 
-
-
-
                     <input id="kassir" type="checkbox" value="kassir" name="fourth-question">
                     <label for="kassir" id="kassir-label">Работа кассира</label>
 
@@ -303,12 +272,6 @@
                         <input id="navyazchiv" type="checkbox" value="navyazchiv" name="kassir">
                         <label for="navyazchiv" id="navyazchiv-label">Навязчивое обслуживание</label>
                     </div>
-
-
-
-
-
-
 
 
 
@@ -331,9 +294,6 @@
                         <input id="navyazchiv-zala" type="checkbox" value="navyazchiv-zala" name="sotrudnik-zala">
                         <label for="navyazchiv-zala" id="navyazchiv-zala-label">Навязчивое обслуживание</label>
                     </div>
-
-
-
 
 
 
