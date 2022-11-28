@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+
     font-family: 'PT Sans';
     background-color: #e5e5e5;
 }
@@ -148,10 +149,13 @@ label img {
 input[type="checkbox"] {
     width: 0;
     height: 0;
+    margin: 0;
+    padding: 0;
+    display: none;
 }
 
 
-.fourth-question>label {
+#assortiment-label, #atmosphere-label, #kassir-label, #sotr-zala-label, #prices-label {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -163,17 +167,186 @@ input[type="checkbox"] {
     font-size: 14px;
     line-height: 18px;
     color: #2283C7;
-    margin-bottom: 12px;
     background-color: #fff;
     text-align: center;
     cursor: pointer;
-    padding-left: 18px;
+    padding: 0 18px;
+    margin-bottom: 12px;
+}
+
+
+
+
+.hidden {
+    display: none;
+}
+
+
+
+#assortiment:checked+label, #atmosphere:checked+label, #kassir:checked+label, #sotr-zala:checked+label {
+    background-color: #2283C7;
+    color: #fff;
+}
+
+
+#prices:checked+label {
+    background-color: #2283C7;
+    color: #fff;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    padding: 14px 18px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #6FAEDB;
+}
+
+
+
+
+.sub-prices {
+    background-color: #2283C7;
+    color: #fff;
+    margin: 0;
+    padding: 24px 18px;
+    border-radius: 0 0 6px 6px;
 }
 
 
 
 
 
+
+
+
+
+#hi-prices-label, #bad-actions-label, #bad-cennik-label {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 6px;
+    padding: 0 18px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+#hi-prices, #bad-actions, #bad-cennik {
+    display: none;
+}
+
+#hi-prices:checked+label, #bad-actions:checked+label, #bad-cennik:checked+label {
+    background-color: #fff;
+    color: #2283C7;
+    margin-bottom: 6px;
+    padding-top: 6px;
+}
+
+
+
+
+
+
+.sub-prices {
+    display: none;
+}
+
+#prices:checked~.sub-prices {
+    display: block;
+}
+
+
+
+
+#hi-prices:checked+label {
+    background-color: #fff;
+    margin-bottom: 0;
+    border-radius: 6px 6px 0 0;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    color: #2283C7;
+    height: 28px;
+    padding: 6px 12px 16px 12px;
+    border-bottom: 1px solid #E5E5E5;
+
+}
+
+
+.hi-prices-to {
+    background-color: #fff;
+    color: #2283C7;
+    margin-bottom: 6px;
+    border-radius: 0 0 6px 6px;
+    padding: 12px 12px 16px 12px;
+
+}
+
+.hi-prices-to label {
+    display: inline-flex;
+    justify-content: center;
+    width: max-content;
+    align-items: center;
+    padding: 4px 6px;
+    border: 1.5px solid #2283C7;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 4px 6px 4px 0;
+
+}
+
+.hi-prices-to input:checked+label {
+    background-color: #2283C7;
+    color: #fff;
+}
+
+
+#hi-prices-books {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+
+
+
+.question-name-price {
+    color: #2283C7;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.hi-prices-to {
+    display: none;
+}
+
+#hi-prices:checked~.hi-prices-to {
+    display: block;
+}
+
+
+
+
+.hi-prices-to-books {
+    display: none;
+    color: #191919;
+    opacity: 0.5;
+
+}
+
+
+
+#hi-prices-books:checked~.hi-prices-to-books {
+    display: block;
+}
+
+
+.question-name-price-books {
+    color: #191919;
+    opacity: 0.5;
+}
 
 
 
@@ -202,8 +375,9 @@ input[type="checkbox"] {
 }
 
 
-
-
+#wt {
+    margin-bottom: 18px;
+}
 
 
 .end-page {
@@ -216,16 +390,144 @@ input[type="checkbox"] {
 
 
 
-.hidden {
+
+/* /////////////////////////////////// */
+
+
+#atmosphere:checked+label,
+#kassir:checked+label,
+#sotr-zala:checked+label #assortiment:checked+label {
+
+    border-radius: 6px 6px 0 0;
+    padding-bottom: 14px 18px 12px 18px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #6FAEDB;
+
+}
+
+.atmo,
+.kassir,
+.sotrudnik-zal,
+.assortiment {
+    background-color: #2283C7;
+    border-radius: 0 0 6px 6px;
+    margin-bottom: 12px;
+    padding: 18px;
+}
+
+.atmo input,
+.kassir input,
+.sotrudnik-zal input,
+.assortiment input {
+    display: block;
+    background-color: #2283C7;
+    color: #FFFFFF;
+
+}
+
+
+.which-problem {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-bottom: 16px;
+
+}
+
+.main-answ {
+    padding: 0 18px;
+}
+
+
+
+
+#dark-label, #hot-label, #cold-label, #dirty-label,
+#slow-label, #ochered-label, #neprivetliv-label, #navyazchiv-label,
+#hard-to-find-label, #didnt-help-label, #neprivetliv-zala-label, #navyazchiv-zala-label,
+#assortiment-net-tovara-label, #assortiment-hard-find-label, #assortiment-no-choice-label, #assortiment-bad-quality-label {
+    display: block;
+    width: max-content;
+    border-radius: 6px;
+    background-color: #2283C7;
+    margin-bottom: 6px;
+    padding: 6px 12px;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#dark:checked+label, #hot:checked+label, #cold:checked+label, #dirty:checked+label,
+#slow:checked+label, #ochered:checked+label, #neprivetliv:checked+label, #navyazchiv:checked+label,
+#hard-to-find:checked+label, #didnt-help:checked+label, #neprivetliv-zala:checked+label, #navyazchiv-zala:checked+label,
+#assortiment-net-tovara:checked+label, #assortiment-hard-find:checked+label, #assortiment-no-choice:checked+label, #assortiment-bad-quality:checked+label {
+    background-color: #fff;
+    color: #2283C7;
+}
+
+
+
+.atmo,
+.kassir,
+.sotrudnik-zal,
+.assortiment,
+.quality {
     display: none;
 }
 
-
-.fourth-question input {
+#atmosphere:checked~.atmo,
+#kassir:checked~.kassir,
+#sotr-zala:checked~.sotrudnik-zal,
+#assortiment:checked~.assortiment,
+#assortiment-bad-quality:checked~.quality {
     display: block;
 }
 
-input[type="checkbox"]:checked+label {
-    background-color: #2283C7;
-    color: #fff;
+
+
+#assortiment:checked+label {
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 0;
+}
+
+
+#quality-of {
+    width: 100%;
+    line-height: 18px;
+    color: #6a6a6a;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(167, 164, 164);
+    margin-bottom: 10px;
+}
+
+.quality {
+    padding: 14px 12px;
+    background-color: #fff;
+    color: #2283C7;
+    border-radius: 0 0 6px 6px;
+}
+
+
+#assortiment-bad-quality:checked+label {
+    background-color: #fff;
+    color: #2283C7;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.which-problem-blue {
+    height: 16px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2283C7
 }

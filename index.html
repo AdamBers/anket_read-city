@@ -65,34 +65,219 @@
                 <div class="fourth-question hidden" id="fourth-question">
                     <p class="question-name">Что не понравилось?</p>
 
+
+
+
+
+
                     <input id="assortiment" type="checkbox" value="assortiment" name="fourth-question">
-                    <label for="assortiment" id="assortiment">Ассортимент</label>
+                    <label for="assortiment" id="assortiment-label" class="main-answ">Ассортимент</label>
+
+
+                    <div class="assortiment hidden">
+                        <p class="which-problem">Что Вам не понравилось в ассортименте?</p>
+
+                        <input id="assortiment-net-tovara" type="checkbox" value="assortiment-net-tovara"
+                            name="assortiment">
+                        <label for="assortiment-net-tovara" id="assortiment-net-tovara-label">Нет нужного товара</label>
+
+                        <!-- <div class="hi-prices-to-books">
+                            <p class="which-problem">Что именно вы не смогли найти?</p>
+
+                            <input id="books-hud" type="checkbox" value="books-hud" name="assortiment">
+                            <label for="books-hud" id="hi-prices-suvenir-label">Художественная
+                                литература</label>
+
+                            <input id="books-kids" type="checkbox" value="books-kids" name="assortiment">
+                            <label for="books-kids" id="hi-prices-food-label">Детская литература</label>
+
+                            <input id="books-education" type="checkbox" value="books-education" name="assortiment">
+                            <label for="books-education" id="hi-prices-another-label">Учебная и прикладная
+                                литература</label>
+
+                        </div> -->
+
+
+
+
+                        <input id="assortiment-hard-find" type="checkbox" value="assortiment-hard-find"
+                            name="assortiment">
+                        <label for="assortiment-hard-find" id="assortiment-hard-find-label">Трудности с поиском
+                            товара</label>
+
+                        <input id="assortiment-no-choice" type="checkbox" value="assortiment-no-choice"
+                            name="assortiment">
+                        <label for="assortiment-no-choice" id="assortiment-no-choice-label">Недостаточный выбор
+                            товара</label>
+
+                        <input id="assortiment-bad-quality" type="checkbox" value="assortiment-bad-quality"
+                            name="assortiment">
+                        <label for="assortiment-bad-quality" id="assortiment-bad-quality-label">Не устраивает качество
+                            товара</label>
+
+                        <div class="quality hidden">
+                            <p class="which-problem-blue">Качество какого товара Вас не устраивает?</p>
+                            <input type="text" placeholder="Введите название" id="quality-of">
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     <input id="atmosphere" type="checkbox" value="atmosphere" name="fourth-question">
-                    <label for="atmosphere" id="atmosphere">Атмосфера</label>
+                    <label for="atmosphere" id="atmosphere-label" class="main-answ">Атмосфера</label>
+
+                    <div class="atmo hidden">
+                        <p class="which-problem">На что нам следует обратить внимание в атмосфере магазина?</p>
+
+                        <input id="dark" type="checkbox" value="dark" name="atmo">
+                        <label for="dark" id="dark-label">Темный зал</label>
+
+                        <input id="hot" type="checkbox" value="hot" name="atmo">
+                        <label for="hot" id="hot-label">В помещении жарко/душно</label>
+
+                        <input id="cold" type="checkbox" value="cold" name="atmo">
+                        <label for="cold" id="cold-label">В помещении холодно</label>
+
+                        <input id="dirty" type="checkbox" value="dirty" name="atmo">
+                        <label for="dirty" id="dirty-label">Грязно</label>
+                    </div>
+
+
+
+
+
 
                     <input id="kassir" type="checkbox" value="kassir" name="fourth-question">
-                    <label for="kassir" id="kassir">Работа кассира</label>
+                    <label for="kassir" id="kassir-label">Работа кассира</label>
+
+                    <div class="kassir">
+                        <p class="which-problem">На что нам следует обратить внимание в работе кассира?</p>
+
+                        <input id="slow" type="checkbox" value="slow" name="kassir">
+                        <label for="slow" id="slow-label">Медленная работа сотрудника</label>
+
+                        <input id="ochered" type="checkbox" value="ochered" name="kassir">
+                        <label for="ochered" id="ochered-label">Большая очередь/Время ожидания</label>
+
+                        <input id="neprivetliv" type="checkbox" value="neprivetliv" name="kassir">
+                        <label for="neprivetliv" id="neprivetliv-label">Сотрудник неприветлив</label>
+
+                        <input id="navyazchiv" type="checkbox" value="navyazchiv" name="kassir">
+                        <label for="navyazchiv" id="navyazchiv-label">Навязчивое обслуживание</label>
+                    </div>
+
+
+
+
+
+
+
+
 
                     <input id="sotr-zala" type="checkbox" value="sotr-zala" name="fourth-question">
-                    <label for="sotr-zala" id="sotr-zala">Работа сотрудника зала</label>
+                    <label for="sotr-zala" id="sotr-zala-label">Работа сотрудника зала</label>
+
+
+                    <div class="sotrudnik-zal hidden">
+                        <p class="which-problem">На что нам следует обратить внимание в работе сотрудника зала?</p>
+
+                        <input id="hard-to-find" type="checkbox" value="hard-to-find" name="sotrudnik-zala">
+                        <label for="hard-to-find" id="hard-to-find-label">Сложно найти сотрудника</label>
+
+                        <input id="didnt-help" type="checkbox" value="didnt-help" name="sotrudnik-zala">
+                        <label for="didnt-help" id="didnt-help-label">Не оказана помощь в выборе товара</label>
+
+                        <input id="neprivetliv-zala" type="checkbox" value="neprivetliv-zala" name="sotrudnik-zala">
+                        <label for="neprivetliv-zala" id="neprivetliv-zala-label">Сотрудник неприветлив</label>
+
+                        <input id="navyazchiv-zala" type="checkbox" value="navyazchiv-zala" name="sotrudnik-zala">
+                        <label for="navyazchiv-zala" id="navyazchiv-zala-label">Навязчивое обслуживание</label>
+                    </div>
+
+
+
+
+
 
                     <input id="prices" type="checkbox" value="prices" name="fourth-question">
-                    <label for="prices" id="prices">Цены</label>
+                    <label for="prices" id="prices-label"> Цены </label>
+
+                    <div class="sub-prices hidden">
+                        <p id="wt">Что Вам не понравилось в ценах?</p>
+                        <div class="sub-high-prices">
+                            <input id="hi-prices" type="checkbox" value="hi-prices" name="prices">
+                            <label for="hi-prices" id="hi-prices-label">
+                                Высокие цены
+                            </label>
+
+                            <div class="hi-prices-to hidden">
+                                <p class="question-name-price">На что именно высокие цены?</p>
+                                <input id="hi-prices-books" type="checkbox" value="hi-prices-books" name="hi-prices-to">
+                                <label for="hi-prices-books" id="hi-prices-books-label">Книги</label>
+
+                                <input id="hi-prices-kanc" type="checkbox" value="hi-prices" name="hi-prices-to">
+                                <label for="hi-prices-kanc" id="hi-prices-kanc-label">Канцтовары</label>
+
+                                <input id="hi-prices-hobby" type="checkbox" value="hi-prices" name="hi-prices-to">
+                                <label for="hi-prices-hobby" id="hi-prices-hobby-label">Хобби/Игры/Игрушки</label>
+
+                                <input id="hi-prices-suvenir" type="checkbox" value="hi-prices" name="hi-prices-to">
+                                <label for="hi-prices-suvenir" id="hi-prices-suvenir-label">Сувениры</label>
+
+                                <input id="hi-prices-food" type="checkbox" value="hi-prices" name="hi-prices-to">
+                                <label for="hi-prices-food" id="hi-prices-food-label">Еда и напитки</label>
+
+                                <input id="hi-prices-another" type="checkbox" value="hi-prices" name="hi-prices-to">
+                                <label for="hi-prices-another" id="hi-prices-another-label">Другое</label>
+
+
+
+                                <div class="hi-prices-to-books hidden">
+                                    <p class="question-name-price-books">На какие именно книги высокие цены?</p>
+
+                                    <input id="books-hud" type="checkbox" value="books-hud" name="hi-prices-to-books">
+                                    <label for="books-hud" id="hi-prices-suvenir-label">Художественная
+                                        литература</label>
+
+                                    <input id="books-kids" type="checkbox" value="books-kids" name="hi-prices-to-books">
+                                    <label for="books-kids" id="hi-prices-food-label">Детская литература</label>
+
+                                    <input id="books-education" type="checkbox" value="books-education"
+                                        name="hi-prices-to-books">
+                                    <label for="books-education" id="hi-prices-another-label">Учебная и прикладная
+                                        литература</label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <input id="bad-actions" type="checkbox" value="bad-actions" name="prices">
+                        <label for="bad-actions" id="bad-actions-label">
+                            Неактуальные акции
+                        </label>
+                        <input id="bad-cennik" type="checkbox" value="bad-cennik" name="prices">
+                        <label for="bad-cennik" id="bad-cennik-label">
+                            Цена на кассе не соответствует ценнику
+                        </label>
+                    </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <input type="submit" value="Отправить" id="send-button">
         </form>
 
