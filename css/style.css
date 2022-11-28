@@ -477,7 +477,8 @@ input[type="checkbox"] {
 .quality,
 .assortiment-no-choice,
 .trudno-poisk,
-.net-tovara {
+.net-tovara,
+#book1, #kanc2, #hobby3, #suvenir4, #food5, #another6 {
     display: none;
 }
 
@@ -488,7 +489,13 @@ input[type="checkbox"] {
 #assortiment-bad-quality:checked~.quality,
 #assortiment-no-choice:checked~.assortiment-no-choice,
 #assortiment-hard-find:checked~.trudno-poisk,
-#assortiment-net-tovara:checked~.net-tovara {
+#assortiment-net-tovara:checked~.net-tovara,
+#net-tovara-books:checked~#book1,
+#net-tovara-kanc:checked~#kanc2,
+#net-tovara-hobby:checked~#hobby3,
+#net-tovara-suvenir:checked~#suvenir4,
+#net-tovara-food:checked~#food5,
+#net-tovara-another:checked~#another6 {
     display: block;
 }
 
@@ -568,4 +575,18 @@ input[type="checkbox"] {
 #net-tovara-books:checked+label, #net-tovara-kanc:checked+label, #net-tovara-hobby:checked+label, net-tovara-suvenir:checked+label, #net-tovara-food:checked+label, #net-tovara-another:checked+label {
     color: #fff;
     background-color: #2283C7;
+}
+
+
+.adding-text {
+    width: 100%;
+    line-height: 18px;
+    color: #6a6a6a !important;
+    outline: none;
+    border: none;
+    background-color: #fff !important;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(167, 164, 164);
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
