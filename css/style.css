@@ -221,7 +221,7 @@ input[type="checkbox"] {
 #hi-prices-label, #bad-actions-label, #bad-cennik-label {
     display: flex;
     align-items: center;
-    height: 28px;
+    min-height: 28px;
     border: 1.5px solid #FFFFFF;
     border-radius: 6px;
     padding: 0 18px;
@@ -265,7 +265,7 @@ input[type="checkbox"] {
     font-weight: 700;
     line-height: 16px;
     color: #2283C7;
-    height: 28px;
+    min-height: 28px;
     padding: 6px 12px 16px 12px;
     border-bottom: 1px solid #E5E5E5;
 
@@ -474,7 +474,8 @@ input[type="checkbox"] {
 .kassir,
 .sotrudnik-zal,
 .assortiment,
-.quality {
+.quality,
+.assortiment-no-choice {
     display: none;
 }
 
@@ -482,13 +483,15 @@ input[type="checkbox"] {
 #kassir:checked~.kassir,
 #sotr-zala:checked~.sotrudnik-zal,
 #assortiment:checked~.assortiment,
-#assortiment-bad-quality:checked~.quality {
+#assortiment-bad-quality:checked~.quality,
+#assortiment-no-choice:checked~.assortiment-no-choice {
     display: block;
 }
 
 
 
-#assortiment:checked+label {
+#assortiment:checked+label,
+#assortiment-no-choice:checked+label {
     border-radius: 6px 6px 0 0;
     margin-bottom: 0;
 }
@@ -506,15 +509,18 @@ input[type="checkbox"] {
     margin-bottom: 10px;
 }
 
-.quality {
+.quality,
+.assortiment-no-choice {
     padding: 14px 12px;
     background-color: #fff;
     color: #2283C7;
     border-radius: 0 0 6px 6px;
+    margin-bottom: 6px;
 }
 
 
-#assortiment-bad-quality:checked+label {
+#assortiment-bad-quality:checked+label,
+#assortiment-no-choice:checked+label {
     background-color: #fff;
     color: #2283C7;
     border-radius: 6px 6px 0 0;
@@ -529,5 +535,24 @@ input[type="checkbox"] {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
-    color: #2283C7
+    color: #2283C7;
+    margin-bottom: 12px;
+}
+
+
+.assortiment-no-choice label {
+    display: block;
+    width: max-content;
+    border-radius: 6px;
+    background-color: #ffffff;
+    margin-bottom: 6px;
+    padding: 6px 12px;
+    border: 1px solid #2283C7;
+    color: #2283C7;
+    cursor: pointer;
+}
+
+#no-choice-books:checked+label, #no-choice-kanc:checked+label, #no-choice-hobby:checked+label, #no-choice-suvenir:checked+label, #no-choice-food:checked+label, #no-choice-another:checked+label {
+    color: #fff;
+    background-color: #2283C7;
 }
